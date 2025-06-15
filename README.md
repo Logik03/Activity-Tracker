@@ -90,6 +90,9 @@ Builds the app for production to the `build` folder. It correctly bundles React 
 
 ## Assumptions Made During Development
 - web server client emits events every 6 seconds i.e 30,000 this is to prevent many events being emmited at once and easy monitoring and debugging of the events
+- web socket actions are 'logged in','logged out','updated profile','joined meeting', 'commented on task', 'completed a task' just 6 actions are emitted
+- web socket users are 'Alice','Bob','Carol','Dave','Eve' making a total of just 5 users
+- Data for users and event actions can be mocked by editing the array for ACTIONS and USERS in the index.js of the server folder within the codebase
 - **Screen Sizes**: The UI is optimized for desktop and tablet viewports, with basic mobile responsiveness.
 - **Data Format**: All API responses are expected to be in JSON format.
 - **Network Connectivity**: The application assumes a stable internet connection for API calls.
